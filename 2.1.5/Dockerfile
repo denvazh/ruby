@@ -15,4 +15,7 @@ RUN apk-install bash ca-certificates \
   ruby-rdoc \
   ruby-bundler
 
+ENV PATH /usr/lib/ruby/gems/2.1.0/bin:$PATH
+
+# use IRB by default
 CMD ["irb"]
