@@ -13,7 +13,7 @@ RUN apk-install bash ca-certificates \
   ruby-minitest \
   ruby-rake \
   ruby-rdoc \
-  ruby-bundler \
+  ruby-bundler
 
 ENV PATH /usr/lib/ruby/gems/2.1.0/bin:$PATH
 
