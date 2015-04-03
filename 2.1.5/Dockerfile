@@ -4,7 +4,7 @@ FROM gliderlabs/alpine:3.1
 MAINTAINER Denis Vazhenin <denis.vazhenin@me.com>
 
 RUN apk-install bash ca-certificates \
-  ruby \
+  ruby ruby-dev \
   ruby-irb \
   ruby-libs \
   ruby-io-console \
@@ -13,7 +13,10 @@ RUN apk-install bash ca-certificates \
   ruby-minitest \
   ruby-rake \
   ruby-rdoc \
-  ruby-bundler
+  ruby-bundler \
+  gcc libgcc \
+  make \
+  musl-dev
 
 ENV PATH /usr/lib/ruby/gems/2.1.0/bin:$PATH
 
